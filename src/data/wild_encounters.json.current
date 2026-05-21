@@ -1595,6 +1595,11 @@
                 "species": "SPECIES_FARIGIRAF"
               },
               {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_URSALUNA"
+              },
+              {
                 "min_level": 26,
                 "max_level": 26,
                 "species": "SPECIES_LINOONE"
