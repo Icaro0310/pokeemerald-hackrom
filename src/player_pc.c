@@ -244,13 +244,25 @@ static const u16 sNewGamePCItems[][2] =
     { ITEM_SHINY_STONE, 5 },
     { ITEM_DUSK_STONE, 5 },
     { ITEM_DAWN_STONE, 5 },
-    { ITEM_OVAL_STONE, 5 },
-    { ITEM_ICE_STONE, 5 },
+        { ITEM_ICE_STONE, 5 },
     
     // Itens Especiais
     { ITEM_HEART_SCALE, 99 },
     { ITEM_PP_MAX, 99 },
     { ITEM_MASTER_BALL, 99 },
+    
+    // Fósseis (1x cada)
+    { ITEM_HELIX_FOSSIL, 1 },
+    { ITEM_DOME_FOSSIL, 1 },
+    { ITEM_OLD_AMBER, 1 },
+    { ITEM_ROOT_FOSSIL, 1 },
+    { ITEM_CLAW_FOSSIL, 1 },
+    { ITEM_SKULL_FOSSIL, 1 },
+    { ITEM_ARMOR_FOSSIL, 1 },
+    { ITEM_COVER_FOSSIL, 1 },
+    { ITEM_PLUME_FOSSIL, 1 },
+    { ITEM_JAW_FOSSIL, 1 },
+    { ITEM_SAIL_FOSSIL, 1 },
     
     // Item original mantido
     { ITEM_POTION, 1 },
