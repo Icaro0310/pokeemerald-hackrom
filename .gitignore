@@ -46,3 +46,7 @@ tools/trainerproc/trainerproc
 *.fastSmol
 *.smolTM
 __pycache__
+*.backup*
+*.current
+relatorio_*.txt
+RESUMO_*.md
