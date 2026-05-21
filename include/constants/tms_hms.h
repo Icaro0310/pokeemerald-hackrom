@@ -51,7 +51,57 @@
     F(STEEL_WING) \
     F(SKILL_SWAP) \
     F(SNATCH) \
-    F(OVERHEAT)
+    F(OVERHEAT) \
+    F(WILL_O_WISP) \
+    F(SWORDS_DANCE) \
+    F(TRICK_ROOM) \
+    F(SLEEP_TALK) \
+    F(DRAGON_DANCE) \
+    F(THUNDER_FANG) \
+    F(ICE_FANG) \
+    F(FIRE_FANG) \
+    F(PSYCHIC_FANGS) \
+    F(ROCK_SLIDE) \
+    F(X_SCISSOR) \
+    F(ICE_PUNCH) \
+    F(FIRE_PUNCH) \
+    F(THUNDER_PUNCH) \
+    F(DRAIN_PUNCH) \
+    F(PLAY_ROUGH) \
+    F(U_TURN) \
+    F(POISON_JAB) \
+    F(INCINERATE) \
+    F(SCALD) \
+    F(VOLT_SWITCH) \
+    F(DAZZLING_GLEAM) \
+    F(HEX) \
+    F(GRASS_KNOT) \
+    F(SHADOW_CLAW) \
+    F(STONE_EDGE) \
+    F(AVALANCHE) \
+    F(ZEN_HEADBUTT) \
+    F(MOONBLAST) \
+    F(BRUTAL_SWING) \
+    F(LIQUIDATION) \
+    F(DRACO_METEOR) \
+    F(METEOR_MASH) \
+    F(STEEL_BEAM) \
+    F(CHILLING_WATER) \
+    F(TRAILBLAZE) \
+    F(SYNTHESIS) \
+    F(HYPER_VOICE) \
+    F(SACRED_SWORD) \
+    F(FUSION_BOLT) \
+    F(FUSION_FLARE) \
+    F(BLUE_FLARE) \
+    F(BOLT_STRIKE) \
+    F(BRAVE_BIRD) \
+    F(STEALTH_ROCK) \
+    F(CRUNCH) \
+    F(HYDRO_PUMP) \
+    F(HI_JUMP_KICK) \
+    F(FLAME_CHARGE) \
+    F(BULLDOZE)
 
 #define FOREACH_HM(F) \
     F(CUT) \

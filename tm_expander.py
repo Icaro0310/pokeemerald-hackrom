@@ -74,20 +74,20 @@ def expand():
     
     print("\n📝 Expanding FOREACH_TM...")
     
-    # Encontra F(OVERHEAT) seguido de FOREACH_HM
-    pattern = r'(F\(OVERHEAT\))(\s*\\?\s*\n)(\s*FOREACH_HM)'
+    # Encontra F(OVERHEAT) no FOREACH_TM
+    pattern = r'(F\(OVERHEAT\))(\s*\n)'
     match = re.search(pattern, content)
     
     if not match:
         print("❌ Padrão não encontrado!")
         return False
     
-    # Cria novas linhas
+    # Cria novas linhas com barra invertida no OVERHEAT e novas linhas
     new_lines = " \\\n" + "\n".join([f"    F({move}) \\" for move in NEW_TM_MOVES])
     
-    # Substitui
+    # Substitui OVERHEAT por OVERHEAT + novos TMs
     old = match.group(1) + match.group(2)
-    new = match.group(1) + new_lines + "\n" + match.group(2)
+    new = match.group(1) + new_lines + "\n"
     
     content = content.replace(old, new, 1)
     

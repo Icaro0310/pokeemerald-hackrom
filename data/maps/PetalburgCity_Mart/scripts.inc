@@ -25,6 +25,40 @@ PetalburgCity_Mart_Pokemart_Basic:
 	.2byte ITEM_X_ATTACK
 	.2byte ITEM_X_DEFENSE
 	.2byte ITEM_ORANGE_MAIL
+    .2byte ITEM_TM34
+    .2byte ITEM_TM35
+    .2byte ITEM_TM36
+    .2byte ITEM_TM37
+    .2byte ITEM_TM38
+    .2byte ITEM_TM39
+    .2byte ITEM_TM40
+    .2byte ITEM_TM41
+    .2byte ITEM_TM42
+    .2byte ITEM_TM43
+    .2byte ITEM_TM44
+    .2byte ITEM_TM45
+    .2byte ITEM_TM46
+    .2byte ITEM_TM47
+    .2byte ITEM_TM48
+    .2byte ITEM_TM49
+    .2byte ITEM_TM50
+    .2byte ITEM_TM51
+    .2byte ITEM_TM52
+    .2byte ITEM_TM53
+    .2byte ITEM_TM54
+    .2byte ITEM_TM55
+    .2byte ITEM_TM56
+    .2byte ITEM_TM57
+    .2byte ITEM_TM58
+    .2byte ITEM_TM59
+    .2byte ITEM_TM60
+    .2byte ITEM_TM61
+    .2byte ITEM_TM62
+    .2byte ITEM_TM63
+    .2byte ITEM_TM64
+    .2byte ITEM_TM65
+    .2byte ITEM_TM66
+
 	pokemartlistend
 
 PetalburgCity_Mart_EventScript_ExpandedItems::
