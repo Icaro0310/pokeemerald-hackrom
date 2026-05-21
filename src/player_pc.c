@@ -234,7 +234,28 @@ static const struct MenuAction sItemStorage_MenuActions[] =
 
 static const u16 sNewGamePCItems[][2] =
 {
+    // Pedras de Evolução (5x cada)
+    { ITEM_FIRE_STONE, 5 },
+    { ITEM_WATER_STONE, 5 },
+    { ITEM_THUNDER_STONE, 5 },
+    { ITEM_LEAF_STONE, 5 },
+    { ITEM_MOON_STONE, 5 },
+    { ITEM_SUN_STONE, 5 },
+    { ITEM_SHINY_STONE, 5 },
+    { ITEM_DUSK_STONE, 5 },
+    { ITEM_DAWN_STONE, 5 },
+    { ITEM_OVAL_STONE, 5 },
+    { ITEM_ICE_STONE, 5 },
+    
+    // Itens Especiais
+    { ITEM_HEART_SCALE, 99 },
+    { ITEM_PP_MAX, 99 },
+    { ITEM_MASTER_BALL, 99 },
+    
+    // Item original mantido
     { ITEM_POTION, 1 },
+    
+    // Fim da lista
     { ITEM_NONE, 0 }
 };
 
