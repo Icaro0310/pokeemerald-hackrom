@@ -50,3 +50,4 @@ __pycache__
 *.current
 relatorio_*.txt
 RESUMO_*.md
+build.log
