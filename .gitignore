@@ -51,3 +51,9 @@ __pycache__
 relatorio_*.txt
 RESUMO_*.md
 build.log
+*.BAK
+*.CURRENT_BAK
+*_fix.py
+*_update.py
+SESSAO_*.json
+session_*.json
