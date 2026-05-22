@@ -57,3 +57,8 @@ build.log
 *_update.py
 SESSAO_*.json
 session_*.json
+*.gba
+*.sav
+build/
+*.o
+__pycache__/
