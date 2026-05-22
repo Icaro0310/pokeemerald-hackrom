@@ -213,6 +213,9 @@ void NewGameInitData(void)
     ResetItemFlags();
     ResetDexNav();
     ClearFollowerNPCData();
+    FlagSet(FLAG_UNUSED_0x025); // Ativa Double Wild permanentemente desde o início
+    FlagSet(B_SMART_WILD_AI_FLAG); // Ativa IA inteligente para Pokémon selvagens permanentemente
+    FlagSet(B_SMART_TRAINER_AI_FLAG); // Ativa IA inteligente para todos os treinadores permanentemente
 }
 
 static void ResetMiniGamesRecords(void)
