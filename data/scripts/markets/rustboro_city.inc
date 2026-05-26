@@ -44,6 +44,6 @@ RustboroCity_Mart_TMs::
     .2byte ITEM_TM97     // TM97
     .2byte ITEM_TM98     // TM98
     .2byte ITEM_TM99     // TM99
-    .2byte ITEM_TM100     // TM100
+    .2byte ITEM_TM100    // TM100
     .2byte ITEM_NONE
     end
