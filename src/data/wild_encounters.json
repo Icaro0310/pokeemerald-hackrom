@@ -8169,6 +8169,11 @@
                 "min_level": 32,
                 "max_level": 32,
                 "species": "SPECIES_SPHEAL"
+              },
+              {
+                "min_level": 35,
+                "max_level": 40,
+                "species": "SPECIES_URSHIFU_RAPID_STRIKE"
               }
             ]
           }

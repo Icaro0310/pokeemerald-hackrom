@@ -112,9 +112,9 @@ static const u8 sStarterLabelCoords[STARTER_MON_COUNT][2] =
 
 static const u16 sStarterMon[STARTER_MON_COUNT] =
 {
-    SPECIES_ELECTRODE_HISUI,
-    SPECIES_ARCANINE_HISUI,
-    SPECIES_URSHIFU_RAPID_STRIKE,
+    SPECIES_VOLTORB_HISUI,
+    SPECIES_GROWLITHE_HISUI,
+    SPECIES_PICHU,
 };
 
 static const struct BgTemplate sBgTemplates[3] =
@@ -550,21 +550,21 @@ static void Task_HandleConfirmStarterInput(u8 taskId)
         CreateMon(&mon, species, 5, 31, FALSE, 0, OT_ID_PLAYER_ID, 0);
         
         // Set custom moves based on starter
-        if (species == SPECIES_ELECTRODE_HISUI) {
-            SetMonMoveSlot(&mon, MOVE_THUNDERBOLT, 0);
-            SetMonMoveSlot(&mon, MOVE_GIGA_DRAIN, 1);
-            SetMonMoveSlot(&mon, MOVE_LEECH_SEED, 2);
-            SetMonMoveSlot(&mon, MOVE_THUNDER_WAVE, 3);
-        } else if (species == SPECIES_ARCANINE_HISUI) {
-            SetMonMoveSlot(&mon, MOVE_FIRE_FANG, 0);
-            SetMonMoveSlot(&mon, MOVE_ROCK_TOMB, 1);
-            SetMonMoveSlot(&mon, MOVE_FIRE_SPIN, 2);
-            SetMonMoveSlot(&mon, MOVE_WILL_O_WISP, 3);
-        } else if (species == SPECIES_URSHIFU_RAPID_STRIKE) {
-            SetMonMoveSlot(&mon, MOVE_LIQUIDATION, 0);
-            SetMonMoveSlot(&mon, MOVE_DRAIN_PUNCH, 1);
-            SetMonMoveSlot(&mon, MOVE_ICE_PUNCH, 2);
-            SetMonMoveSlot(&mon, MOVE_POISON_JAB, 3);
+        if (species == SPECIES_VOLTORB_HISUI) {
+            SetMonMoveSlot(&mon, MOVE_THUNDER_SHOCK, 0);
+            SetMonMoveSlot(&mon, MOVE_TACKLE, 1);
+            SetMonMoveSlot(&mon, MOVE_BULLET_SEED, 2);
+            SetMonMoveSlot(&mon, MOVE_LEECH_SEED, 3);
+        } else if (species == SPECIES_GROWLITHE_HISUI) {
+            SetMonMoveSlot(&mon, MOVE_EMBER, 0);
+            SetMonMoveSlot(&mon, MOVE_HEAD_SMASH, 1);
+            SetMonMoveSlot(&mon, MOVE_COVET, 2);
+            SetMonMoveSlot(&mon, MOVE_DOUBLE_KICK, 3);
+        } else if (species == SPECIES_PICHU) {
+            SetMonMoveSlot(&mon, MOVE_SURF, 0);
+            SetMonMoveSlot(&mon, MOVE_THUNDER_SHOCK, 1);
+            SetMonMoveSlot(&mon, MOVE_THUNDER_WAVE, 2);
+            SetMonMoveSlot(&mon, MOVE_DISARMING_VOICE, 3);
         }
         
         // Set IVs to max
