@@ -1,0 +1,175 @@
+A trainer specification starts with "=== TRAINER_XXXX ==="
+
+=== TRAINER_ROXANNE ===
+Name: Roxanne
+Class: Leader
+Pic: TRAINER_PIC_FRONT_ROXANNE
+Gender: Female
+Music: INTENSE
+Double Battle: No
+AI: Smart Trainer
+
+Shieldon
+Level: 12
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ability: Sturdy
+Item: Leftovers
+Nature: Impish
+
+    - Iron Head
+    - Stone Edge
+    - Earthquake
+    - Stealth Rock
+
+=== TRAINER_BRAWLY ===
+Name: Brawly
+Class: Leader
+Pic: TRAINER_PIC_FRONT_BRAWLY
+Gender: Male
+Music: INTENSE
+Double Battle: No
+AI: Smart Trainer
+
+Lucario
+Level: 14
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ability: Inner Focus
+Item: Leftovers
+Nature: Adamant
+
+    - Aura Sphere
+    - Flash Cannon
+    - Extreme Speed
+    - Swords Dance
+
+=== TRAINER_WATTSON ===
+Name: Wattson
+Class: Leader
+Pic: TRAINER_PIC_FRONT_WATTSON
+Gender: Male
+Music: INTENSE
+Double Battle: No
+AI: Smart Trainer
+
+Chinchou
+Level: 16
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ability: Volt Absorb
+Item: Leftovers
+Nature: Timid
+
+    - Thunderbolt
+    - Hydro Pump
+    - Ice Beam
+    - Volt Switch
+
+
+=== TRAINER_FLANNERY ===
+Name: Flannery
+Class: Leader
+Pic: TRAINER_PIC_FRONT_FLANNERY
+Gender: Female
+Music: INTENSE
+Double Battle: No
+AI: Smart Trainer
+
+Flareon
+Level: 18
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ability: Flash Fire
+Item: Leftovers
+Nature: Adamant
+
+    - Flare Blitz
+    - Superpower
+    - Facade
+    - Quick Attack
+
+
+=== TRAINER_NORMAN ===
+Name: Norman
+Class: Leader
+Pic: TRAINER_PIC_FRONT_NORMAN
+Gender: Male
+Music: INTENSE
+Double Battle: No
+AI: Smart Trainer
+
+Raticate-Alola
+Level: 20
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ability: Hustle
+Item: Leftovers
+Nature: Jolly
+
+    - Sucker Punch
+    - Double-Edge
+    - U-turn
+    - Crunch
+
+
+=== TRAINER_WINONA ===
+Name: Winona
+Class: Leader
+Pic: TRAINER_PIC_FRONT_WINONA
+Gender: Female
+Music: INTENSE
+Double Battle: No
+AI: Smart Trainer
+
+Noctowl
+Level: 22
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ability: Insomnia
+Item: Leftovers
+Nature: Timid
+
+    - Hurricane
+    - Psychic
+    - Hyper Voice
+    - Roost
+
+
+=== TRAINER_TATE_AND_LIZA ===
+Name: TATE & LIZA
+Class: Leader
+Pic: Leader Tate & Liza
+Gender: Male
+Music: INTENSE
+Double Battle: Yes
+AI: Smart Trainer
+
+Mr Mime Galar
+Level: 24
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ability: Screen Cleaner
+Item: Leftovers
+Nature: Modest
+
+    - Ice Punch
+    - Zen Headbutt
+    - Fake Out
+    - Reflect
+
+
+=== TRAINER_JUAN ===
+Name: JUAN
+Class: Leader
+Pic: Leader Juan
+Gender: Male
+Music: INTENSE
+Double Battle: No
+AI: Smart Trainer
+
+Blastoise
+Level: 26
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ability: Rain Dish
+Item: Leftovers
+Nature: Modest
+
+    - Hydro Pump
+    - Ice Beam
+    - Dark Pulse
+    - Aura Sphere
+

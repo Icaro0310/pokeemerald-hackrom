@@ -4592,7 +4592,7 @@ Gender: Male
 Music: Elite Four
 Items: Full Restore / Full Restore
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Force Setup First Turn
+AI: Smart Trainer / Try to 2HKO / HP Aware / Powerful Status / Will Suicide / Weigh Ability Prediction / Prefer Highest Damage Move / Prediction
 Mugshot: Purple
 
 Mightyena
@@ -4643,7 +4643,7 @@ Gender: Female
 Music: Elite Four
 Items: Full Restore / Full Restore
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Force Setup First Turn
+AI: Smart Trainer / Try to 2HKO / HP Aware / Powerful Status / Will Suicide / Weigh Ability Prediction / Prefer Highest Damage Move / Prediction
 Mugshot: Green
 
 Dusclops
@@ -4694,7 +4694,7 @@ Gender: Female
 Music: Elite Four
 Items: Full Restore / Full Restore
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Force Setup First Turn
+AI: Smart Trainer / Try to 2HKO / HP Aware / Powerful Status / Will Suicide / Weigh Ability Prediction / Prefer Highest Damage Move / Prediction
 Mugshot: Pink
 
 Sealeo
@@ -4745,7 +4745,7 @@ Gender: Male
 Music: Elite Four
 Items: Full Restore / Full Restore
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Force Setup First Turn
+AI: Smart Trainer / Try to 2HKO / HP Aware / Powerful Status / Will Suicide / Weigh Ability Prediction / Prefer Highest Damage Move / Prediction
 Mugshot: Blue
 
 Shelgon
@@ -4796,30 +4796,30 @@ Gender: Female
 Music: Female
 Items: Potion / Potion
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Force Setup First Turn
+AI: Smart Trainer / Try to 2HKO / HP Aware / Powerful Status / Will Suicide / Weigh Ability Prediction / Prefer Highest Damage Move / Prediction
 
-Geodude
+Geodude Alola
 Level: 12
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Tackle
 - Defense Curl
-- Rock Throw
+- Spark
 - Rock Tomb
 
-Geodude
+Tirtouga
 Level: 12
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Tackle
-- Defense Curl
-- Rock Throw
-- Rock Tomb
+- Aqua Jet
+- Ancient Power
+- Withdraw
+- Protect
 
-Nosepass @ Oran Berry
+Lileep @ Oran Berry
 Level: 15
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Block
-- Harden
-- Tackle
+- Confuse Ray
+- Wrap
+- Bullet Seed
 - Rock Tomb
 
 === TRAINER_BRAWLY_1 ===
@@ -4830,31 +4830,31 @@ Gender: Male
 Music: Male
 Items: Super Potion / Super Potion
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Force Setup First Turn
+AI: Smart Trainer / Try to 2HKO / HP Aware / Powerful Status / Will Suicide / Weigh Ability Prediction / Prefer Highest Damage Move / Prediction
 
-Machop
+Hitmonchan
 Level: 16
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Karate Chop
-- Low Kick
-- Seismic Toss
-- Bulk Up
+- Ice Punch
+- Thunder Punch
+- Fire Punch
+- Mach Punch
 
 Meditite
 Level: 16
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Focus Punch
-- Light Screen
-- Reflect
+- Confusion
+- Rock Smash
 - Bulk Up
 
-Makuhita @ Sitrus Berry
+Heracross @ Sitrus Berry
 Level: 19
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Arm Thrust
-- Vital Throw
-- Reversal
-- Bulk Up
+- Aerial Ace
+- Rock Smash
+- Rock Slide
+- Pin Missile
 
 === TRAINER_WATTSON_1 ===
 Name: WATTSON
@@ -4864,23 +4864,23 @@ Gender: Male
 Music: Male
 Items: Super Potion / Super Potion
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Force Setup First Turn
+AI: Smart Trainer / Try to 2HKO / HP Aware / Powerful Status / Will Suicide / Weigh Ability Prediction / Prefer Highest Damage Move / Prediction
 
-Voltorb
+Chinchou
 Level: 20
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Rollout
 - Spark
-- Self Destruct
-- Shock Wave
+- Thunder Wave
+- Bubble Beam
+- Icy Wind
 
-Electrike
+Raichu Alola
 Level: 20
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Shock Wave
-- Leer
-- Quick Attack
-- Howl
+- Spark
+- Surf
+- Thunder Wave
+- Dig
 
 Magneton
 Level: 22
@@ -4890,13 +4890,13 @@ IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 - Thunder Wave
 - Sonic Boom
 
-Manectric @ Sitrus Berry
+Electrode Hisui @ Sitrus Berry
 Level: 24
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Quick Attack
-- Thunder Wave
-- Shock Wave
-- Howl
+- Charge Beam
+- Stun Spore
+- Bullet Seed
+- Rollout
 
 === TRAINER_FLANNERY_1 ===
 Name: FLANNERY
@@ -4906,39 +4906,39 @@ Gender: Female
 Music: Female
 Items: Hyper Potion / Hyper Potion
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Force Setup First Turn
+AI: Smart Trainer / Try to 2HKO / HP Aware / Powerful Status / Will Suicide / Weigh Ability Prediction / Prefer Highest Damage Move / Prediction
 
-Numel
+Arcanine
 Level: 24
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Overheat
-- Take Down
-- Magnitude
-- Sunny Day
+- Fire Fang
+- Thunder Fang
+- Dig
+- Will-O-Wisp
 
-Slugma
+Ninetales
 Level: 24
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Overheat
-- Smog
-- Light Screen
-- Sunny Day
+- Confuse Ray
+- Fire Spin
+- Incinerate
+- Protect
 
-Camerupt
+Arcanine Hisui
 Level: 26
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Overheat
-- Tackle
-- Sunny Day
-- Attract
+- Flame Wheel
+- Thunder Fang
+- Rock Slide
+- Dig
 
-Torkoal @ White Herb
+Marowak Alola @ White Herb
 Level: 29
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Overheat
-- Sunny Day
-- Body Slam
-- Attract
+- Flame Wheel
+- Ice Punch
+- Shadow Bone
+- Bulldoze
 
 === TRAINER_NORMAN_1 ===
 Name: NORMAN
@@ -4948,31 +4948,31 @@ Gender: Male
 Music: Male
 Items: Hyper Potion / Hyper Potion
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Force Setup First Turn
+AI: Smart Trainer / Try to 2HKO / HP Aware / Powerful Status / Will Suicide / Weigh Ability Prediction / Prefer Highest Damage Move / Prediction
 
-Spinda
+Kangaskhan
 Level: 27
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Teeter Dance
-- Psybeam
-- Facade
-- Encore
+- Thunder Punch
+- Ice Punch
+- Fire Punch
+- Earthquake
 
-Vigoroth
+Snorlax
 Level: 27
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Slash
-- Facade
-- Encore
-- Feint Attack
+- Rest
+- Snore
+- Curse
+- Body Slam
 
-Linoone
+Miltank
 Level: 29
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Slash
-- Belly Drum
-- Facade
-- Headbutt
+- Rollout
+- Double Team
+- Work Up
+- Rest
 
 Slaking @ Sitrus Berry
 Level: 31
@@ -4990,15 +4990,15 @@ Gender: Female
 Music: Female
 Items: Hyper Potion / Hyper Potion
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Force Setup First Turn
+AI: Smart Trainer / Try to 2HKO / HP Aware / Powerful Status / Will Suicide / Weigh Ability Prediction / Prefer Highest Damage Move / Prediction
 
-Swablu
+Scyther
 Level: 29
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
-- Perish Song
-- Mirror Move
-- Safeguard
 - Aerial Ace
+- X-Scissor
+- U-turn
+- Trailblaze
 
 Tropius
 Level: 29
@@ -5040,39 +5040,39 @@ Gender: Male
 Music: Female
 Items: Hyper Potion / Hyper Potion / Hyper Potion / Hyper Potion
 Double Battle: Yes
-AI: Check Bad Move / Try To Faint / Force Setup First Turn
+AI: Smart Trainer / Try to 2HKO / HP Aware / Powerful Status / Will Suicide / Weigh Ability Prediction / Prefer Highest Damage Move / Prediction
 
-Claydol
+Rapidash Galar
 Level: 41
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Earthquake
-- Ancient Power
-- Psychic
-- Light Screen
+- Psybeam
+- Fairy Wind
+- Mystical Fire
+- Wild Charge
 
-Xatu
+Slowbro Galar
 Level: 41
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Psychic
-- Sunny Day
-- Confuse Ray
-- Calm Mind
+- Hydro Pump
+- Poison Jab
+- Psyshock
+- Fire Blast
 
-Lunatone @ Sitrus Berry
+Mr. Rime @ Sitrus Berry
 Level: 42
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Light Screen
-- Psychic
+- Ice Beam
+- Calm Mind
 - Hypnosis
-- Calm Mind
+- Dream Eater
 
-Solrock @ Sitrus Berry
+Wyrdeer @ Sitrus Berry
 Level: 42
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Sunny Day
-- Solar Beam
-- Psychic
-- Flamethrower
+- Confuse Ray
+- Thunder Wave
+- Calm Mind
+- Psybeam
 
 === TRAINER_JUAN_1 ===
 Name: JUAN
@@ -5082,39 +5082,39 @@ Gender: Male
 Music: Male
 Items: Hyper Potion / Hyper Potion
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Force Setup First Turn
+AI: Smart Trainer / Try to 2HKO / HP Aware / Powerful Status / Will Suicide / Weigh Ability Prediction / Prefer Highest Damage Move / Prediction
 
-Luvdisc
+Swampert
 Level: 41
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Water Pulse
-- Attract
-- Sweet Kiss
-- Flail
+- Rock Slide
+- Earthquake
+- Ice Punch
+- Waterfall
 
-Whiscash
+Ludicolo
 Level: 41
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Rain Dance
+- Leech Seed
+- Giga Drain
+- Thunder Punch
+- Surf
+
+Empoleon
+Level: 43
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Water Pulse
-- Amnesia
+- Ice Beam
+- Flash Cannon
 - Earthquake
 
-Sealeo
+Greninja
 Level: 43
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Encore
-- Body Slam
-- Aurora Beam
-- Water Pulse
-
-Crawdaunt
-Level: 43
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Water Pulse
-- Crabhammer
-- Taunt
-- Leer
+- Bubble Beam
+- Night Slash
+- Blizzard
+- Psyshock
 
 Kingdra @ Chesto Berry
 Level: 46
@@ -15861,7 +15861,7 @@ Gender: Male
 Music: Male
 Items: Full Restore / Full Restore / Full Restore / Full Restore
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Force Setup First Turn
+AI: Smart Trainer / Try to 2HKO / HP Aware / Powerful Status / Will Suicide / Weigh Ability Prediction / Prefer Highest Damage Move / Prediction
 
 Skarmory
 Level: 77

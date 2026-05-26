@@ -11394,7 +11394,7 @@ F_TRAINER_FEMALE |
 #line 4594
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 4595
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_FORCE_SETUP_FIRST_TURN,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_HP_AWARE | AI_FLAG_POWERFUL_STATUS | AI_FLAG_WILL_SUICIDE | AI_FLAG_WEIGH_ABILITY_PREDICTION | AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE | AI_FLAG_PREDICTION,
 #line 4596
         .mugshotColor = MUGSHOT_COLOR_PURPLE,
         .partySize = 5,
@@ -11513,7 +11513,7 @@ F_TRAINER_FEMALE |
 #line 4645
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 4646
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_FORCE_SETUP_FIRST_TURN,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_HP_AWARE | AI_FLAG_POWERFUL_STATUS | AI_FLAG_WILL_SUICIDE | AI_FLAG_WEIGH_ABILITY_PREDICTION | AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE | AI_FLAG_PREDICTION,
 #line 4647
         .mugshotColor = MUGSHOT_COLOR_GREEN,
         .partySize = 5,
@@ -11632,7 +11632,7 @@ F_TRAINER_FEMALE |
 #line 4696
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 4697
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_FORCE_SETUP_FIRST_TURN,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_HP_AWARE | AI_FLAG_POWERFUL_STATUS | AI_FLAG_WILL_SUICIDE | AI_FLAG_WEIGH_ABILITY_PREDICTION | AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE | AI_FLAG_PREDICTION,
 #line 4698
         .mugshotColor = MUGSHOT_COLOR_PINK,
         .partySize = 5,
@@ -11749,7 +11749,7 @@ F_TRAINER_FEMALE |
 #line 4747
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 4748
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_FORCE_SETUP_FIRST_TURN,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_HP_AWARE | AI_FLAG_POWERFUL_STATUS | AI_FLAG_WILL_SUICIDE | AI_FLAG_WEIGH_ABILITY_PREDICTION | AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE | AI_FLAG_PREDICTION,
 #line 4749
         .mugshotColor = MUGSHOT_COLOR_BLUE,
         .partySize = 5,
@@ -11868,13 +11868,13 @@ F_TRAINER_FEMALE |
 #line 4798
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 4799
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_FORCE_SETUP_FIRST_TURN,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_HP_AWARE | AI_FLAG_POWERFUL_STATUS | AI_FLAG_WILL_SUICIDE | AI_FLAG_WEIGH_ABILITY_PREDICTION | AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE | AI_FLAG_PREDICTION,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
             {
 #line 4801
-            .species = SPECIES_GEODUDE,
+            .species = SPECIES_GEODUDE_ALOLA,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 4803
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -11886,13 +11886,13 @@ F_TRAINER_FEMALE |
 #line 4804
                 MOVE_TACKLE,
                 MOVE_DEFENSE_CURL,
-                MOVE_ROCK_THROW,
+                MOVE_SPARK,
                 MOVE_ROCK_TOMB,
             },
             },
             {
 #line 4809
-            .species = SPECIES_GEODUDE,
+            .species = SPECIES_TIRTOUGA,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 4811
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -11902,15 +11902,15 @@ F_TRAINER_FEMALE |
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 4812
-                MOVE_TACKLE,
-                MOVE_DEFENSE_CURL,
-                MOVE_ROCK_THROW,
-                MOVE_ROCK_TOMB,
+                MOVE_AQUA_JET,
+                MOVE_ANCIENT_POWER,
+                MOVE_WITHDRAW,
+                MOVE_PROTECT,
             },
             },
             {
 #line 4817
-            .species = SPECIES_NOSEPASS,
+            .species = SPECIES_LILEEP,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 4817
             .heldItem = ITEM_ORAN_BERRY,
@@ -11922,9 +11922,9 @@ F_TRAINER_FEMALE |
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 4820
-                MOVE_BLOCK,
-                MOVE_HARDEN,
-                MOVE_TACKLE,
+                MOVE_CONFUSE_RAY,
+                MOVE_WRAP,
+                MOVE_BULLET_SEED,
                 MOVE_ROCK_TOMB,
             },
             },
@@ -11947,13 +11947,13 @@ F_TRAINER_FEMALE |
 #line 4832
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 4833
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_FORCE_SETUP_FIRST_TURN,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_HP_AWARE | AI_FLAG_POWERFUL_STATUS | AI_FLAG_WILL_SUICIDE | AI_FLAG_WEIGH_ABILITY_PREDICTION | AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE | AI_FLAG_PREDICTION,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
             {
 #line 4835
-            .species = SPECIES_MACHOP,
+            .species = SPECIES_HITMONCHAN,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 4837
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -11963,10 +11963,10 @@ F_TRAINER_FEMALE |
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 4838
-                MOVE_KARATE_CHOP,
-                MOVE_LOW_KICK,
-                MOVE_SEISMIC_TOSS,
-                MOVE_BULK_UP,
+                MOVE_ICE_PUNCH,
+                MOVE_THUNDER_PUNCH,
+                MOVE_FIRE_PUNCH,
+                MOVE_MACH_PUNCH,
             },
             },
             {
@@ -11982,14 +11982,14 @@ F_TRAINER_FEMALE |
             .moves = {
 #line 4846
                 MOVE_FOCUS_PUNCH,
-                MOVE_LIGHT_SCREEN,
-                MOVE_REFLECT,
+                MOVE_CONFUSION,
+                MOVE_ROCK_SMASH,
                 MOVE_BULK_UP,
             },
             },
             {
 #line 4851
-            .species = SPECIES_MAKUHITA,
+            .species = SPECIES_HERACROSS,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 4851
             .heldItem = ITEM_SITRUS_BERRY,
@@ -12001,10 +12001,10 @@ F_TRAINER_FEMALE |
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 4854
-                MOVE_ARM_THRUST,
-                MOVE_VITAL_THROW,
-                MOVE_REVERSAL,
-                MOVE_BULK_UP,
+                MOVE_AERIAL_ACE,
+                MOVE_ROCK_SMASH,
+                MOVE_ROCK_SLIDE,
+                MOVE_PIN_MISSILE,
             },
             },
         },
@@ -12026,13 +12026,13 @@ F_TRAINER_FEMALE |
 #line 4866
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 4867
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_FORCE_SETUP_FIRST_TURN,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_HP_AWARE | AI_FLAG_POWERFUL_STATUS | AI_FLAG_WILL_SUICIDE | AI_FLAG_WEIGH_ABILITY_PREDICTION | AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE | AI_FLAG_PREDICTION,
         .partySize = 4,
         .party = (const struct TrainerMon[])
         {
             {
 #line 4869
-            .species = SPECIES_VOLTORB,
+            .species = SPECIES_CHINCHOU,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 4871
             .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
@@ -12042,15 +12042,15 @@ F_TRAINER_FEMALE |
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 4872
-                MOVE_ROLLOUT,
                 MOVE_SPARK,
-                MOVE_SELF_DESTRUCT,
-                MOVE_SHOCK_WAVE,
+                MOVE_THUNDER_WAVE,
+                MOVE_BUBBLE_BEAM,
+                MOVE_ICY_WIND,
             },
             },
             {
 #line 4877
-            .species = SPECIES_ELECTRIKE,
+            .species = SPECIES_RAICHU_ALOLA,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 4879
             .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
@@ -12060,10 +12060,10 @@ F_TRAINER_FEMALE |
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 4880
-                MOVE_SHOCK_WAVE,
-                MOVE_LEER,
-                MOVE_QUICK_ATTACK,
-                MOVE_HOWL,
+                MOVE_SPARK,
+                MOVE_SURF,
+                MOVE_THUNDER_WAVE,
+                MOVE_DIG,
             },
             },
             {
@@ -12086,7 +12086,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 4893
-            .species = SPECIES_MANECTRIC,
+            .species = SPECIES_ELECTRODE_HISUI,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 4893
             .heldItem = ITEM_SITRUS_BERRY,
@@ -12098,10 +12098,10 @@ F_TRAINER_FEMALE |
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 4896
-                MOVE_QUICK_ATTACK,
-                MOVE_THUNDER_WAVE,
-                MOVE_SHOCK_WAVE,
-                MOVE_HOWL,
+                MOVE_CHARGE_BEAM,
+                MOVE_STUN_SPORE,
+                MOVE_BULLET_SEED,
+                MOVE_ROLLOUT,
             },
             },
         },
@@ -12125,13 +12125,13 @@ F_TRAINER_FEMALE |
 #line 4908
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 4909
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_FORCE_SETUP_FIRST_TURN,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_HP_AWARE | AI_FLAG_POWERFUL_STATUS | AI_FLAG_WILL_SUICIDE | AI_FLAG_WEIGH_ABILITY_PREDICTION | AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE | AI_FLAG_PREDICTION,
         .partySize = 4,
         .party = (const struct TrainerMon[])
         {
             {
 #line 4911
-            .species = SPECIES_NUMEL,
+            .species = SPECIES_ARCANINE,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 4913
             .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
@@ -12141,15 +12141,15 @@ F_TRAINER_FEMALE |
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 4914
-                MOVE_OVERHEAT,
-                MOVE_TAKE_DOWN,
-                MOVE_MAGNITUDE,
-                MOVE_SUNNY_DAY,
+                MOVE_FIRE_FANG,
+                MOVE_THUNDER_FANG,
+                MOVE_DIG,
+                MOVE_WILL_O_WISP,
             },
             },
             {
 #line 4919
-            .species = SPECIES_SLUGMA,
+            .species = SPECIES_NINETALES,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 4921
             .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
@@ -12159,15 +12159,15 @@ F_TRAINER_FEMALE |
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 4922
-                MOVE_OVERHEAT,
-                MOVE_SMOG,
-                MOVE_LIGHT_SCREEN,
-                MOVE_SUNNY_DAY,
+                MOVE_CONFUSE_RAY,
+                MOVE_FIRE_SPIN,
+                MOVE_INCINERATE,
+                MOVE_PROTECT,
             },
             },
             {
 #line 4927
-            .species = SPECIES_CAMERUPT,
+            .species = SPECIES_ARCANINE_HISUI,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 4929
             .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
@@ -12177,15 +12177,15 @@ F_TRAINER_FEMALE |
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 4930
-                MOVE_OVERHEAT,
-                MOVE_TACKLE,
-                MOVE_SUNNY_DAY,
-                MOVE_ATTRACT,
+                MOVE_FLAME_WHEEL,
+                MOVE_THUNDER_FANG,
+                MOVE_ROCK_SLIDE,
+                MOVE_DIG,
             },
             },
             {
 #line 4935
-            .species = SPECIES_TORKOAL,
+            .species = SPECIES_MAROWAK_ALOLA,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 4935
             .heldItem = ITEM_WHITE_HERB,
@@ -12197,10 +12197,10 @@ F_TRAINER_FEMALE |
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 4938
-                MOVE_OVERHEAT,
-                MOVE_SUNNY_DAY,
-                MOVE_BODY_SLAM,
-                MOVE_ATTRACT,
+                MOVE_FLAME_WHEEL,
+                MOVE_ICE_PUNCH,
+                MOVE_SHADOW_BONE,
+                MOVE_BULLDOZE,
             },
             },
         },
@@ -12222,13 +12222,13 @@ F_TRAINER_FEMALE |
 #line 4950
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 4951
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_FORCE_SETUP_FIRST_TURN,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_HP_AWARE | AI_FLAG_POWERFUL_STATUS | AI_FLAG_WILL_SUICIDE | AI_FLAG_WEIGH_ABILITY_PREDICTION | AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE | AI_FLAG_PREDICTION,
         .partySize = 4,
         .party = (const struct TrainerMon[])
         {
             {
 #line 4953
-            .species = SPECIES_SPINDA,
+            .species = SPECIES_KANGASKHAN,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 4955
             .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
@@ -12238,15 +12238,15 @@ F_TRAINER_FEMALE |
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 4956
-                MOVE_TEETER_DANCE,
-                MOVE_PSYBEAM,
-                MOVE_FACADE,
-                MOVE_ENCORE,
+                MOVE_THUNDER_PUNCH,
+                MOVE_ICE_PUNCH,
+                MOVE_FIRE_PUNCH,
+                MOVE_EARTHQUAKE,
             },
             },
             {
 #line 4961
-            .species = SPECIES_VIGOROTH,
+            .species = SPECIES_SNORLAX,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 4963
             .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
@@ -12256,15 +12256,15 @@ F_TRAINER_FEMALE |
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 4964
-                MOVE_SLASH,
-                MOVE_FACADE,
-                MOVE_ENCORE,
-                MOVE_FEINT_ATTACK,
+                MOVE_REST,
+                MOVE_SNORE,
+                MOVE_CURSE,
+                MOVE_BODY_SLAM,
             },
             },
             {
 #line 4969
-            .species = SPECIES_LINOONE,
+            .species = SPECIES_MILTANK,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 4971
             .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
@@ -12274,10 +12274,10 @@ F_TRAINER_FEMALE |
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 4972
-                MOVE_SLASH,
-                MOVE_BELLY_DRUM,
-                MOVE_FACADE,
-                MOVE_HEADBUTT,
+                MOVE_ROLLOUT,
+                MOVE_DOUBLE_TEAM,
+                MOVE_WORK_UP,
+                MOVE_REST,
             },
             },
             {
@@ -12321,13 +12321,13 @@ F_TRAINER_FEMALE |
 #line 4992
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 4993
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_FORCE_SETUP_FIRST_TURN,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_HP_AWARE | AI_FLAG_POWERFUL_STATUS | AI_FLAG_WILL_SUICIDE | AI_FLAG_WEIGH_ABILITY_PREDICTION | AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE | AI_FLAG_PREDICTION,
         .partySize = 5,
         .party = (const struct TrainerMon[])
         {
             {
 #line 4995
-            .species = SPECIES_SWABLU,
+            .species = SPECIES_SCYTHER,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 4997
             .iv = TRAINER_PARTY_IVS(25, 25, 25, 25, 25, 25),
@@ -12337,10 +12337,10 @@ F_TRAINER_FEMALE |
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 4998
-                MOVE_PERISH_SONG,
-                MOVE_MIRROR_MOVE,
-                MOVE_SAFEGUARD,
                 MOVE_AERIAL_ACE,
+                MOVE_X_SCISSOR,
+                MOVE_U_TURN,
+                MOVE_TRAILBLAZE,
             },
             },
             {
@@ -12436,13 +12436,13 @@ F_TRAINER_FEMALE |
 #line 5042
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
 #line 5043
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_FORCE_SETUP_FIRST_TURN,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_HP_AWARE | AI_FLAG_POWERFUL_STATUS | AI_FLAG_WILL_SUICIDE | AI_FLAG_WEIGH_ABILITY_PREDICTION | AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE | AI_FLAG_PREDICTION,
         .partySize = 4,
         .party = (const struct TrainerMon[])
         {
             {
 #line 5045
-            .species = SPECIES_CLAYDOL,
+            .species = SPECIES_RAPIDASH_GALAR,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 5047
             .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
@@ -12452,15 +12452,15 @@ F_TRAINER_FEMALE |
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 5048
-                MOVE_EARTHQUAKE,
-                MOVE_ANCIENT_POWER,
-                MOVE_PSYCHIC,
-                MOVE_LIGHT_SCREEN,
+                MOVE_PSYBEAM,
+                MOVE_FAIRY_WIND,
+                MOVE_MYSTICAL_FIRE,
+                MOVE_WILD_CHARGE,
             },
             },
             {
 #line 5053
-            .species = SPECIES_XATU,
+            .species = SPECIES_SLOWBRO_GALAR,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 5055
             .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
@@ -12470,15 +12470,15 @@ F_TRAINER_FEMALE |
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 5056
-                MOVE_PSYCHIC,
-                MOVE_SUNNY_DAY,
-                MOVE_CONFUSE_RAY,
-                MOVE_CALM_MIND,
+                MOVE_HYDRO_PUMP,
+                MOVE_POISON_JAB,
+                MOVE_PSYSHOCK,
+                MOVE_FIRE_BLAST,
             },
             },
             {
 #line 5061
-            .species = SPECIES_LUNATONE,
+            .species = SPECIES_MR_RIME,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 5061
             .heldItem = ITEM_SITRUS_BERRY,
@@ -12490,15 +12490,15 @@ F_TRAINER_FEMALE |
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 5064
-                MOVE_LIGHT_SCREEN,
-                MOVE_PSYCHIC,
-                MOVE_HYPNOSIS,
+                MOVE_ICE_BEAM,
                 MOVE_CALM_MIND,
+                MOVE_HYPNOSIS,
+                MOVE_DREAM_EATER,
             },
             },
             {
 #line 5069
-            .species = SPECIES_SOLROCK,
+            .species = SPECIES_WYRDEER,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 5069
             .heldItem = ITEM_SITRUS_BERRY,
@@ -12510,10 +12510,10 @@ F_TRAINER_FEMALE |
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 5072
-                MOVE_SUNNY_DAY,
-                MOVE_SOLAR_BEAM,
-                MOVE_PSYCHIC,
-                MOVE_FLAMETHROWER,
+                MOVE_CONFUSE_RAY,
+                MOVE_THUNDER_WAVE,
+                MOVE_CALM_MIND,
+                MOVE_PSYBEAM,
             },
             },
         },
@@ -12535,13 +12535,13 @@ F_TRAINER_FEMALE |
 #line 5084
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 5085
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_FORCE_SETUP_FIRST_TURN,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_HP_AWARE | AI_FLAG_POWERFUL_STATUS | AI_FLAG_WILL_SUICIDE | AI_FLAG_WEIGH_ABILITY_PREDICTION | AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE | AI_FLAG_PREDICTION,
         .partySize = 5,
         .party = (const struct TrainerMon[])
         {
             {
 #line 5087
-            .species = SPECIES_LUVDISC,
+            .species = SPECIES_SWAMPERT,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 5089
             .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
@@ -12551,15 +12551,15 @@ F_TRAINER_FEMALE |
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 5090
-                MOVE_WATER_PULSE,
-                MOVE_ATTRACT,
-                MOVE_SWEET_KISS,
-                MOVE_FLAIL,
+                MOVE_ROCK_SLIDE,
+                MOVE_EARTHQUAKE,
+                MOVE_ICE_PUNCH,
+                MOVE_WATERFALL,
             },
             },
             {
 #line 5095
-            .species = SPECIES_WHISCASH,
+            .species = SPECIES_LUDICOLO,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 5097
             .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
@@ -12569,15 +12569,15 @@ F_TRAINER_FEMALE |
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 5098
-                MOVE_RAIN_DANCE,
-                MOVE_WATER_PULSE,
-                MOVE_AMNESIA,
-                MOVE_EARTHQUAKE,
+                MOVE_LEECH_SEED,
+                MOVE_GIGA_DRAIN,
+                MOVE_THUNDER_PUNCH,
+                MOVE_SURF,
             },
             },
             {
 #line 5103
-            .species = SPECIES_SEALEO,
+            .species = SPECIES_EMPOLEON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 5105
             .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
@@ -12587,15 +12587,15 @@ F_TRAINER_FEMALE |
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 5106
-                MOVE_ENCORE,
-                MOVE_BODY_SLAM,
-                MOVE_AURORA_BEAM,
                 MOVE_WATER_PULSE,
+                MOVE_ICE_BEAM,
+                MOVE_FLASH_CANNON,
+                MOVE_EARTHQUAKE,
             },
             },
             {
 #line 5111
-            .species = SPECIES_CRAWDAUNT,
+            .species = SPECIES_GRENINJA,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 5113
             .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
@@ -12605,10 +12605,10 @@ F_TRAINER_FEMALE |
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 5114
-                MOVE_WATER_PULSE,
-                MOVE_CRABHAMMER,
-                MOVE_TAUNT,
-                MOVE_LEER,
+                MOVE_BUBBLE_BEAM,
+                MOVE_NIGHT_SLASH,
+                MOVE_BLIZZARD,
+                MOVE_PSYSHOCK,
             },
             },
             {
@@ -39563,7 +39563,7 @@ F_TRAINER_FEMALE |
 #line 15863
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 15864
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_FORCE_SETUP_FIRST_TURN,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_HP_AWARE | AI_FLAG_POWERFUL_STATUS | AI_FLAG_WILL_SUICIDE | AI_FLAG_WEIGH_ABILITY_PREDICTION | AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE | AI_FLAG_PREDICTION,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {

@@ -521,7 +521,7 @@
 #define P_FAMILY_ZACIAN                  FALSE
 #define P_FAMILY_ZAMAZENTA               FALSE
 #define P_FAMILY_ETERNATUS               FALSE
-#define P_FAMILY_KUBFU                   FALSE
+#define P_FAMILY_KUBFU                   TRUE
 #define P_FAMILY_ZARUDE                  FALSE
 #define P_FAMILY_REGIELEKI               FALSE
 #define P_FAMILY_REGIDRAGO               FALSE

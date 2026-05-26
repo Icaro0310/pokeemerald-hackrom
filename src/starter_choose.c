@@ -112,9 +112,9 @@ static const u8 sStarterLabelCoords[STARTER_MON_COUNT][2] =
 
 static const u16 sStarterMon[STARTER_MON_COUNT] =
 {
-    SPECIES_GROOKEY,
-    SPECIES_CHIMCHAR,
-    SPECIES_FROAKIE,
+    SPECIES_ELECTRODE_HISUI,
+    SPECIES_ARCANINE_HISUI,
+    SPECIES_URSHIFU_RAPID_STRIKE,
 };
 
 static const struct BgTemplate sBgTemplates[3] =
@@ -538,10 +538,45 @@ static void Task_AskConfirmStarter(u8 taskId)
 static void Task_HandleConfirmStarterInput(u8 taskId)
 {
     u8 spriteId;
+    struct Pokemon mon;
+    u16 species;
+    u16 moves[MAX_MON_MOVES] = {MOVE_NONE, MOVE_NONE, MOVE_NONE, MOVE_NONE};
 
     switch (Menu_ProcessInputNoWrapClearOnChoose())
     {
     case 0:  // YES
+        // Create the starter with custom movesets
+        species = sStarterMon[gTasks[taskId].tStarterSelection];
+        CreateMon(&mon, species, 5, 31, FALSE, 0, OT_ID_PLAYER_ID, 0);
+        
+        // Set custom moves based on starter
+        if (species == SPECIES_ELECTRODE_HISUI) {
+            SetMonMoveSlot(&mon, MOVE_THUNDERBOLT, 0);
+            SetMonMoveSlot(&mon, MOVE_GIGA_DRAIN, 1);
+            SetMonMoveSlot(&mon, MOVE_LEECH_SEED, 2);
+            SetMonMoveSlot(&mon, MOVE_THUNDER_WAVE, 3);
+        } else if (species == SPECIES_ARCANINE_HISUI) {
+            SetMonMoveSlot(&mon, MOVE_FIRE_FANG, 0);
+            SetMonMoveSlot(&mon, MOVE_ROCK_TOMB, 1);
+            SetMonMoveSlot(&mon, MOVE_FIRE_SPIN, 2);
+            SetMonMoveSlot(&mon, MOVE_WILL_O_WISP, 3);
+        } else if (species == SPECIES_URSHIFU_RAPID_STRIKE) {
+            SetMonMoveSlot(&mon, MOVE_LIQUIDATION, 0);
+            SetMonMoveSlot(&mon, MOVE_DRAIN_PUNCH, 1);
+            SetMonMoveSlot(&mon, MOVE_ICE_PUNCH, 2);
+            SetMonMoveSlot(&mon, MOVE_POISON_JAB, 3);
+        }
+        
+        // Set IVs to max
+        u32 maxIvs = 0;
+        SetMonData(&mon, MON_DATA_IVS, &maxIvs);
+        
+        // Calculate stats after modification
+        CalculateMonStats(&mon);
+        
+        // Give the starter to player
+        GiveMonToPlayer(&mon);
+        
         // Return the starter choice and exit.
         gSpecialVar_Result = gTasks[taskId].tStarterSelection;
         ResetAllPicSprites();
