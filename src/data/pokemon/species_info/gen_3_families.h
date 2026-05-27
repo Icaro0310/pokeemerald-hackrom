@@ -9902,7 +9902,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sDusclopsLevelUpLearnset,
         .teachableLearnset = sDusclopsTeachableLearnset,
         .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_DUSKNOIR, CONDITIONS({IF_HOLD_ITEM, ITEM_REAPER_CLOTH})},
-                                {EVO_ITEM, ITEM_REAPER_CLOTH, SPECIES_DUSKNOIR}),
+                                {EVO_ITEM, ITEM_REAPER_CLOTH, SPECIES_DUSKNOIR},
+                                {EVO_ITEM, ITEM_DUSK_STONE, SPECIES_DUSKNOIR}),
     },
 
 #if P_GEN_4_CROSS_EVOS

@@ -114,7 +114,7 @@ static const u16 sStarterMon[STARTER_MON_COUNT] =
 {
     SPECIES_VOLTORB_HISUI,
     SPECIES_GROWLITHE_HISUI,
-    SPECIES_PICHU,
+    SPECIES_DUSKULL,
 };
 
 static const struct BgTemplate sBgTemplates[3] =
@@ -547,7 +547,10 @@ static void Task_HandleConfirmStarterInput(u8 taskId)
     case 0:  // YES
         // Create the starter with custom movesets
         species = sStarterMon[gTasks[taskId].tStarterSelection];
-        CreateMon(&mon, species, 5, 31, FALSE, 0, OT_ID_PLAYER_ID, 0);
+        if (species == SPECIES_DUSKULL)
+            CreateMonWithNature(&mon, species, 5, 31, NATURE_RELAXED);
+        else
+            CreateMon(&mon, species, 5, 31, FALSE, 0, OT_ID_PLAYER_ID, 0);
         
         // Set custom moves based on starter
         if (species == SPECIES_VOLTORB_HISUI) {
@@ -560,16 +563,22 @@ static void Task_HandleConfirmStarterInput(u8 taskId)
             SetMonMoveSlot(&mon, MOVE_HEAD_SMASH, 1);
             SetMonMoveSlot(&mon, MOVE_COVET, 2);
             SetMonMoveSlot(&mon, MOVE_DOUBLE_KICK, 3);
-        } else if (species == SPECIES_PICHU) {
-            SetMonMoveSlot(&mon, MOVE_SURF, 0);
-            SetMonMoveSlot(&mon, MOVE_THUNDER_SHOCK, 1);
-            SetMonMoveSlot(&mon, MOVE_THUNDER_WAVE, 2);
-            SetMonMoveSlot(&mon, MOVE_DISARMING_VOICE, 3);
+        } else if (species == SPECIES_DUSKULL) {
+            SetMonMoveSlot(&mon, MOVE_TRICK_ROOM, 0);
+            SetMonMoveSlot(&mon, MOVE_ASTONISH, 1);
+            SetMonMoveSlot(&mon, MOVE_PAIN_SPLIT, 2);
+            SetMonMoveSlot(&mon, MOVE_DISABLE, 3);
         }
         
-        // Set IVs to max
-        u32 maxIvs = 0;
-        SetMonData(&mon, MON_DATA_IVS, &maxIvs);
+        if (species == SPECIES_DUSKULL)
+        {
+            u8 hpEv = 252;
+            u8 defEv = 252;
+            u8 spDefEv = 4;
+            SetMonData(&mon, MON_DATA_HP_EV, &hpEv);
+            SetMonData(&mon, MON_DATA_DEF_EV, &defEv);
+            SetMonData(&mon, MON_DATA_SPDEF_EV, &spDefEv);
+        }
         
         // Calculate stats after modification
         CalculateMonStats(&mon);

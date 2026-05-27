@@ -78,7 +78,7 @@
     F(GRASS_KNOT) \
     F(SHADOW_CLAW) \
     F(STONE_EDGE) \
-    F(AVALANCHE) \
+    F(AQUA_JET) \
     F(ZEN_HEADBUTT) \
     F(MOONBLAST) \
     F(BRUTAL_SWING) \

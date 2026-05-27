@@ -11885,7 +11885,7 @@ F_TRAINER_FEMALE |
             .moves = {
 #line 4804
                 MOVE_TACKLE,
-                MOVE_DEFENSE_CURL,
+                MOVE_DYNAMIC_PUNCH,
                 MOVE_SPARK,
                 MOVE_ROCK_TOMB,
             },

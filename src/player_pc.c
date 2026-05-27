@@ -266,6 +266,13 @@ static const u16 sNewGamePCItems[][2] =
     
     // Item original mantido
     { ITEM_POTION, 1 },
+
+    // Startup items requested by mod
+    { ITEM_EVIOLITE, 1 },
+    { ITEM_LIFE_ORB, 5 },
+    { ITEM_LEFTOVERS, 10 },
+    { ITEM_WEAKNESS_POLICY, 1 },
+    { ITEM_CHOICE_BAND, 1 },
     
     // Fim da lista
     { ITEM_NONE, 0 }
