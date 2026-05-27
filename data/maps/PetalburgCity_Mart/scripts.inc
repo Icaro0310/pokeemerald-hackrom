@@ -42,7 +42,7 @@ PetalburgCity_Mart_Pokemart_Basic:
     .2byte ITEM_TM48
     .2byte ITEM_TM49
     .2byte ITEM_TM50
-    .2byte ITEM_TM51
+    .2byte ITEM_TM32
     .2byte ITEM_TM52
     .2byte ITEM_TM53
     .2byte ITEM_TM54

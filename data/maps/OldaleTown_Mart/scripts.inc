@@ -18,6 +18,12 @@ OldaleTown_Mart_Pokemart_Basic:
 	.2byte ITEM_ANTIDOTE
 	.2byte ITEM_PARALYZE_HEAL
 	.2byte ITEM_AWAKENING
+	.2byte ITEM_POKE_BALL
+	.2byte ITEM_ESCAPE_ROPE
+	.2byte ITEM_REPEL
+	.2byte ITEM_X_SPEED
+	.2byte ITEM_X_ATTACK
+	.2byte ITEM_X_DEFENSE
     .2byte ITEM_TM01
     .2byte ITEM_TM02
     .2byte ITEM_TM03
@@ -48,9 +54,6 @@ OldaleTown_Mart_Pokemart_Basic:
     .2byte ITEM_TM28
     .2byte ITEM_TM29
     .2byte ITEM_TM30
-    .2byte ITEM_TM31
-    .2byte ITEM_TM32
-    .2byte ITEM_TM33
 
 	pokemartlistend
 
